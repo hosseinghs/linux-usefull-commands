@@ -1,0 +1,32 @@
+% -------------------------------------------------------------------------------------------------------------------------------------------------- %
+%                                                                         apt                                                                        %
+% -------------------------------------------------------------------------------------------------------------------------------------------------- %
+
+                                 
+sudo apt install nmap
+sudo apt uninstall nmap
+
+sudo apt update => updates the installed packages
+sudo apt upgrade => upgrades the updated packages installed on your ubuntu
+
+%                                 after installing ubuntu for the first time do: sudo apt update && sudo apt upgrade                                 %
+
+
+% -------------------------------------------------------------------------------------------------------------------------------------------------- %
+%                                                                      aptitude                                                                      %
+% -------------------------------------------------------------------------------------------------------------------------------------------------- %
+
+1.sudo aptitude install nmap
+2.sudo aptitude remove nmap
+
+
+% -------------------------------------------------------------------------------------------------------------------------------------------------- %
+%                                                                        dpkg                                                                        %
+% -------------------------------------------------------------------------------------------------------------------------------------------------- %
+
+dpkg is a package manager for debian based systems but unlike apt and aptitude it cannot download packages automatically
+
+1.dpkg list => list all packages in the system’s package database
+2.dpkg -l | grep apache2 => use this command to check for a specific package
+3.sudo dpkg -i zip_3.0-4_amd64.deb => use this command to install a local file
+4.sudo dpkg -r zip => uninstall a package
